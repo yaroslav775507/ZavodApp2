@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="32dp"
         android:onClick="onClickWork"
         android:text="Составление списка рабочих"
@@ -24,7 +24,7 @@
         android:id="@+id/add2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:onClick="onClickDetal"
         android:text="Составление списка деталей"
         app:layout_constraintEnd_toEndOf="@+id/add1"
@@ -36,12 +36,24 @@
         android:id="@+id/button6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:onClick="onClickIzdel"
         android:text="Составление списка изделий"
         app:layout_constraintEnd_toEndOf="@+id/add2"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/add2"
         app:layout_constraintTop_toBottomOf="@+id/add2" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="ManOrDetails"
+        android:text="Подготовка персоонала и изделий"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

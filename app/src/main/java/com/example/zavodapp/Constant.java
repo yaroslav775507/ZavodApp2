@@ -11,5 +11,11 @@ public class Constant {
     public final static String PRODUCTS_SCALE ="products_scale";
     public final static String PRODUCTS_NUMPATS ="products_numpats";
     public final static String PRODUCTS_INDIVNUMNUM ="products_indivnumber";
+    public final static String MOR_WORKER ="mor_worker";
+    public final static String MOR_INZJ  ="mor_inzj";
+    public final static String MOR_PROD ="mor_prod";
+    public final static String MOR_DETAILS  ="mor_datails";
+
+
 
 }

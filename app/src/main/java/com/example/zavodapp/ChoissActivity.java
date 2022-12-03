@@ -14,7 +14,7 @@ public class ChoissActivity extends AppCompatActivity {
 
     }
     public void adminClick(View view) {
-        Intent i = new Intent(ChoissActivity.this, ControlActivity.class);
+        Intent i = new Intent(ChoissActivity.this, ControlActivityAdmin.class);
         startActivity(i);
     }
 
@@ -22,7 +22,8 @@ public class ChoissActivity extends AppCompatActivity {
 //
 //    }
 //
-//    public void workClick(View view) {
-//
-//    }
+        public void workClick(View view) {
+            Intent i = new Intent(ChoissActivity.this, ControlActivityWorker.class);
+            startActivity(i);
+    }
 }

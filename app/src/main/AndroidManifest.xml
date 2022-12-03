@@ -21,7 +21,7 @@
     </activity>
         <activity android:name=".ReadActivityUser" />
         <activity android:name=".ShowActivityUser" />
-        <activity android:name="com.example.zavodapp.ControlActivity" />
+        <activity android:name="com.example.zavodapp.ControlActivityAdmin" />
         <activity android:name="com.example.zavodapp.MainActivityUser" />
         <activity android:name="com.example.zavodapp.ChoissActivity" />
         <activity android:name="com.example.zavodapp.MainActivityDetals" />
@@ -30,6 +30,9 @@
         <activity android:name="com.example.zavodapp.ReadActivityProduct" />
         <activity android:name="com.example.zavodapp.ShowActivityProduct" />
         <activity android:name="com.example.zavodapp.MainActivityProduct" />
+        <activity android:name="com.example.zavodapp.MainManOrDetails" />
+        <activity android:name="com.example.zavodapp.ShowManOrDetails" />
+        <activity android:name="com.example.zavodapp.ReadManOrDetails" />
 
         <meta-data
             android:name="preloaded_fonts"

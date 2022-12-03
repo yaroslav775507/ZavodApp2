@@ -7,28 +7,33 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ControlActivity extends AppCompatActivity {
+public class ControlActivityAdmin extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.control_layout);
+        setContentView(R.layout.control_layout_admin);
 
     }
 
 
 
     public void onClickWork(View view) {
-        Intent i = new Intent(ControlActivity.this, MainActivityUser.class);
+        Intent i = new Intent(ControlActivityAdmin.this, MainActivityUser.class);
         startActivity(i);
     }
 
     public void onClickDetal(View view) {
-        Intent i = new Intent(ControlActivity.this, MainActivityDetals.class);
+        Intent i = new Intent(ControlActivityAdmin.this, MainActivityDetals.class);
         startActivity(i);
     }
 
     public void onClickIzdel(View view) {
-        Intent i = new Intent(ControlActivity.this, MainActivityProduct.class);
+        Intent i = new Intent(ControlActivityAdmin.this, MainActivityProduct.class);
+        startActivity(i);
+    }
+
+    public void ManOrDetails(View view) {
+        Intent i = new Intent(ControlActivityAdmin.this,MainManOrDetails.class);
         startActivity(i);
     }
 }

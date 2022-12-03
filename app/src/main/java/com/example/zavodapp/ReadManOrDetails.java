@@ -20,30 +20,30 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReadActivityDetails extends AppCompatActivity {
-    private ListView listView;
+public class ReadManOrDetails extends AppCompatActivity {
+    private ListView listMod;
     private ArrayAdapter<String> adapter;
     private List<String> listData;
-    private List<Details> listTemp;
+    private List<WorkList> listTemp;
 
     private DatabaseReference mDataBase;
-    private String  DETAILS_KEY = "Details";
+    private String  WORKLIST_KEY = "WorkList";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       setContentView(R.layout.read_layout_details);
+        setContentView(R.layout.read_mod);
         init();
         getDataFromDB();
         setOnClickItem();
     }
     private void init()
     {
-        listView = findViewById(R.id.ListVie);
+        listMod = findViewById(R.id.ListMod);
         listData = new ArrayList<>();
         listTemp = new ArrayList<>();
         adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, listData);
-        listView.setAdapter(adapter);
-        mDataBase = FirebaseDatabase.getInstance().getReference(DETAILS_KEY);
+        listMod.setAdapter(adapter);
+        mDataBase = FirebaseDatabase.getInstance().getReference( WORKLIST_KEY);
     }
     private void getDataFromDB()
     {
@@ -55,12 +55,13 @@ public class ReadActivityDetails extends AppCompatActivity {
                 if(listTemp.size() > 0)listTemp.clear();
                 for(DataSnapshot ds : dataSnapshot.getChildren())
                 {
-                    Details details = ds.getValue(Details.class);
-                    assert details != null;
-                    listData.add(details.uniqnum);
-                    listTemp.add(details);
+                    WorkList workList = ds.getValue(WorkList.class);
+                    assert workList != null;
+                    listData.add(workList.Inzjener);
+                    listTemp.add(workList);
                 }
                 adapter.notifyDataSetChanged();
+
             }
 
             @Override
@@ -72,14 +73,15 @@ public class ReadActivityDetails extends AppCompatActivity {
     }
     private void setOnClickItem()
     {
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listMod.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Details details = listTemp.get(position);
-                Intent i = new Intent(ReadActivityDetails.this, ShowActivitiDetails.class);
-                i.putExtra(Constant.DETAILS_MATERIAL,details.material);
-                i.putExtra(Constant.DETAILS_SIZE,details.size);
-                i.putExtra(Constant.DETAILS_UNIQNUM,details.uniqnum);
+                WorkList workList = listTemp.get(position);
+                Intent i = new Intent(ReadManOrDetails.this, ShowManOrDetails.class);
+                i.putExtra(Constant.MOR_INZJ,workList.Inzjener);
+                i.putExtra(Constant.MOR_WORKER,workList.Worker);
+                i.putExtra(Constant.MOR_DETAILS,workList.details);
+                i.putExtra(Constant.MOR_PROD,workList.products);
                 startActivity(i);
             }
         });
