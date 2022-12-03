@@ -61,6 +61,7 @@ public class ReadActivityDetails extends AppCompatActivity {
                     listTemp.add(details);
                 }
                 adapter.notifyDataSetChanged();
+                System.out.println("123");
 
             }
 
