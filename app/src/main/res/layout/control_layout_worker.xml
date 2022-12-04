@@ -22,7 +22,7 @@
         android:id="@+id/button12"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/Основой"
         android:onClick="CompleteClick"
         android:text="Сборка"
@@ -48,7 +48,7 @@
         android:id="@+id/button13"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/Основой"
         android:onClick="PointClick"
         android:text="Проверка последовательности сборки инженером"
@@ -56,4 +56,17 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/Основой"
+        android:onClick="CatalogClick"
+        android:text="Каталог"
+        app:layout_constraintEnd_toEndOf="@+id/button13"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
 </androidx.constraintlayout.widget.ConstraintLayout>

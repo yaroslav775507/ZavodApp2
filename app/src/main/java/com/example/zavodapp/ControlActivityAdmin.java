@@ -7,6 +7,9 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.zavodapp.Inzener.ControlActivityInzener;
+import com.example.zavodapp.catalog.Catalog;
+
 public class ControlActivityAdmin extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,6 +37,11 @@ public class ControlActivityAdmin extends AppCompatActivity {
 
     public void ManOrDetails(View view) {
         Intent i = new Intent(ControlActivityAdmin.this,MainManOrDetails.class);
+        startActivity(i);
+    }
+
+    public void CatalogClick(View view) {
+        Intent i = new Intent(ControlActivityAdmin.this , Catalog.class);
         startActivity(i);
     }
 }

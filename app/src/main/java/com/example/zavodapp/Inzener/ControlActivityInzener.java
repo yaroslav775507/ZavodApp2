@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.zavodapp.R;
 import com.example.zavodapp.ReadComlete;
+import com.example.zavodapp.catalog.Catalog;
 
 public class ControlActivityInzener extends AppCompatActivity {
 
@@ -24,6 +25,11 @@ public class ControlActivityInzener extends AppCompatActivity {
     //Слежение за процессом сборки
     public void onLook(View view) {
         Intent i = new Intent(ControlActivityInzener.this , ReadComlete.class);
+        startActivity(i);
+    }
+
+    public void CatalogClick(View view) {
+        Intent i = new Intent(ControlActivityInzener.this , Catalog.class);
         startActivity(i);
     }
 }

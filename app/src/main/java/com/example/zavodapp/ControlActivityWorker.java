@@ -8,6 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.zavodapp.Inzener.ReadRoster;
+import com.example.zavodapp.catalog.Catalog;
 
 public class ControlActivityWorker extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,4 +31,9 @@ public class ControlActivityWorker extends AppCompatActivity {
         Intent i = new Intent(ControlActivityWorker.this, ReadRoster.class);
         startActivity(i);
    }
+
+    public void CatalogClick(View view) {
+        Intent i = new Intent(ControlActivityWorker.this, Catalog.class);
+        startActivity(i);
+    }
 }
