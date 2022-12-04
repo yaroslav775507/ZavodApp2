@@ -15,6 +15,15 @@ public class Constant {
     public final static String MOR_INZJ  ="mor_inzj";
     public final static String MOR_PROD ="mor_prod";
     public final static String MOR_DETAILS  ="mor_datails";
+    public final static String COMPLETE_DETAILS ="complete_details";
+    public final static String COMPLETE_PRODUCTS  ="complete_products";
+    public final static String ROSTER_COMPL ="roster_compl";
+    public final static String ROSTER_1  ="roste_1";
+    public final static String ROSTER_2 ="roste_2";
+    public final static String ROSTER_3  ="roste_3";
+    public final static String ROSTER_4 ="roste_4";
+    public final static String ROSTER_5  ="roste_5";
+
 
 
 

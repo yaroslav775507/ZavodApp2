@@ -7,32 +7,23 @@
     android:background="@color/Основой">
 
     <TextView
-        android:id="@+id/tvMaterial"
-        android:layout_width="137dp"
-        android:layout_height="34dp"
+        android:id="@+id/ComplDetal"
+        android:layout_width="184dp"
+        android:layout_height="36dp"
         android:layout_marginTop="200dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvSize"
-        android:layout_width="137dp"
-        android:layout_height="34dp"
+        android:id="@+id/ComplProduct"
+        android:layout_width="184dp"
+        android:layout_height="36dp"
         android:layout_marginTop="40dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMaterial" />
-
-    <TextView
-        android:id="@+id/tvUniqname"
-        android:layout_width="0dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/tvSize"
-        app:layout_constraintStart_toStartOf="@+id/tvSize"
-        app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+        app:layout_constraintEnd_toEndOf="@+id/ComplDetal"
+        app:layout_constraintStart_toStartOf="@+id/ComplDetal"
+        app:layout_constraintTop_toBottomOf="@+id/ComplDetal" />
 </androidx.constraintlayout.widget.ConstraintLayout>

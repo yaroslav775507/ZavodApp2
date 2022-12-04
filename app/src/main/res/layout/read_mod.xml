@@ -6,5 +6,6 @@
     <ListView
         android:id="@+id/ListMod"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/Основой" />
 </androidx.constraintlayout.widget.ConstraintLayout>

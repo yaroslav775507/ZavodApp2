@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Основой">
+
+    <EditText
+        android:id="@+id/edprod1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Деталь№1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edComplDetalls"
+        app:layout_constraintStart_toStartOf="@+id/edComplDetalls"
+        app:layout_constraintTop_toBottomOf="@+id/edComplDetalls" />
+
+    <EditText
+        android:id="@+id/edprod5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Деталь№5"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ededprod4" />
+
+    <EditText
+        android:id="@+id/ededprod4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Деталь№4"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edprod3"
+        app:layout_constraintStart_toStartOf="@+id/edprod3"
+        app:layout_constraintTop_toBottomOf="@+id/edprod3" />
+
+    <EditText
+        android:id="@+id/edComplDetalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Изделие"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edprod2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Деталь№2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edprod1"
+        app:layout_constraintStart_toStartOf="@+id/edprod1"
+        app:layout_constraintTop_toBottomOf="@+id/edprod1" />
+
+    <EditText
+        android:id="@+id/edprod3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Деталь№3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edprod2"
+        app:layout_constraintStart_toStartOf="@+id/edprod2"
+        app:layout_constraintTop_toBottomOf="@+id/edprod2" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/Основой"
+        android:onClick="SaveRoaster"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/edprod5"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/edprod5"
+        app:layout_constraintTop_toBottomOf="@+id/edprod5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

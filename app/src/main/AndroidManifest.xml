@@ -33,6 +33,14 @@
         <activity android:name="com.example.zavodapp.MainManOrDetails" />
         <activity android:name="com.example.zavodapp.ShowManOrDetails" />
         <activity android:name="com.example.zavodapp.ReadManOrDetails" />
+        <activity android:name="com.example.zavodapp.ControlActivityWorker" />
+        <activity android:name="com.example.zavodapp.CompleteWorker" />
+        <activity android:name="com.example.zavodapp.ReadComlete" />
+        <activity android:name="com.example.zavodapp.ShowComplete" />
+        <activity android:name="com.example.zavodapp.Inzener.ControlActivityInzener" />
+        <activity android:name="com.example.zavodapp.Inzener.MainRoster" />
+        <activity android:name="com.example.zavodapp.Inzener.ReadRoster" />
+        <activity android:name="com.example.zavodapp.Inzener.ShowRoster" />
 
         <meta-data
             android:name="preloaded_fonts"

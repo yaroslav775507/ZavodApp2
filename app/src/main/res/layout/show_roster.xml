@@ -7,44 +7,63 @@
     android:background="@color/Основой">
 
     <TextView
-        android:id="@+id/tvWorker"
+        android:id="@+id/tvComRoster"
         android:layout_width="120dp"
         android:layout_height="32dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="150dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvInzjen"
+        android:id="@+id/tv1"
         android:layout_width="120dp"
         android:layout_height="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWorker" />
+        app:layout_constraintTop_toBottomOf="@+id/tvComRoster" />
 
     <TextView
-        android:id="@+id/tvDetals"
+        android:id="@+id/tv2"
         android:layout_width="120dp"
         android:layout_height="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvProd" />
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
 
     <TextView
-        android:id="@+id/tvProd"
+        android:id="@+id/tv3"
         android:layout_width="120dp"
         android:layout_height="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvInzjen" />
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

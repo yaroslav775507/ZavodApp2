@@ -4,39 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Основой">
+    android:background="@color/Основой"
+    android:onClick="onList">
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/button15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="200dp"
         android:backgroundTint="@color/Основой"
-        android:onClick="workClick"
-        android:text="список работы"
+        android:onClick="onList"
+        android:text="Составленеи спика деталей для сборки изделия/последовательности"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/button17"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/Основой"
-        android:onClick="CompleteClick"
-        android:text="Сборка"
-        app:layout_constraintEnd_toEndOf="@+id/button11"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        android:onClick="onLook"
+        android:text="Слежение за процессом сборки"
+        app:layout_constraintEnd_toEndOf="@+id/button15"
+        app:layout_constraintStart_toStartOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/montserrat_subrayada_bold"
-        android:text="Worker"
+        android:text="Engineer"
         android:textColor="@color/white"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,16 +45,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:backgroundTint="@color/Основой"
-        android:onClick="PointClick"
-        android:text="Проверка последовательности сборки инженером"
-        app:layout_constraintEnd_toEndOf="@+id/button12"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="@+id/button12"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
 </androidx.constraintlayout.widget.ConstraintLayout>
